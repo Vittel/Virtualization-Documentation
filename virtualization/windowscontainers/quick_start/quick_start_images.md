@@ -31,7 +31,7 @@ The first step in manually creating a container image is to deploy a container. 
 > This step may take some time due to the size of the Windows Server Core base image.
 
 ```none
-docker run -it -p 80:80 microsoft/iis cmd
+docker run -it --entrypoint cmd -p 80:80 microsoft/iis
 ```
 
 After the download, the container will start, and a shell session will be started.
